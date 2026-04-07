@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="thermometer.png" type="image/x-icon">
+  <title>Temperature Converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Temperature Converter</h4>
+    <input type="text" class="input-box"><br>
+
+    <div class="conversionSelection">
+      <input type="radio" id="cel-fah" name="radio-buttons">
+      <label for="cel-fah">Celcius &#10132; Fahrenheit</label><br>
+
+      <input type="radio" id="fah-cel" name="radio-buttons">
+      <label for="fah-cel">Fahrenheit &#10132; Celcius</label><br>
+    </div>
+
+    <button class="submit-button" onclick="convert();">submit</button>
+    <h3 class="conversionResult">
+      </h4>
+      <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

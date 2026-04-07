@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgb(1, 0, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(230, 230, 250);
+  height: 320px;
+  width: 300px;
+  border-radius: 14px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h4 {
+  text-align: center;
+  color: red;
+  margin: 0 0 10px 0;
+}
+
+.input-box {
+  padding: 8px;
+  border-width: 1px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border-style: solid;
+  font-size: 19px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: border-color 0.2s ease;
+}
+
+.input-box:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.conversionSelection {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.conversionSelection label {
+  font-weight: 600;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px;
+  background-color: rgb(173, 6, 6);
+  border: none;
+  color: white;
+  font-size: medium;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    opacity 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(200, 10, 10);
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  opacity: 0.7;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
+.no-input {
+  border-color: red;
+}
+
+.no-input::placeholder {
+  color: red;
+  font-weight: 600;
+  font-size: medium;
+}
